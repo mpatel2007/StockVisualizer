@@ -14,7 +14,9 @@ public class App {
         System.out.print("Enter stock ticker: ");
         String ticker = sc.nextLine().toUpperCase();
 
-        String apiKey = "d4fuespr01qgiiendabgd4fuespr01qgiiendac0";
+        String apiKey;
+        System.out.println("Enter API key: ");
+        apiKey = sc.nextLine();
         String urlStr = "https://finnhub.io/api/v1/quote?symbol=" + ticker + "&token=" + apiKey;
 
         try {
